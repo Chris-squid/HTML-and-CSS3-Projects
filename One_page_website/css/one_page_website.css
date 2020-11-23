@@ -1,7 +1,21 @@
 body {
     padding-left: 10em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25%;
+    font-size: 100%;
     color: crimson;
-    background-color: cornflowerblue;
+    background-color: black;
+}
+
+.rsvp {
+    border-style: double;
+    border-color: firebrick;
+    border-radius: 75%;
+    width: "25";
+    height: "25";
+    padding: 10px 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    
 }
