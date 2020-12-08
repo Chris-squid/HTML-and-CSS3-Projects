@@ -4,6 +4,7 @@
 	  <head>
 		<title>The Delta Blues</title>
 		<link rel="stylesheet" type="text/css" href="css/one_page_website.css"/>
+		<script src="JS/one_page_website.js"></script>
 	</head>	 
 <body>
 
@@ -32,123 +33,141 @@
             <!--END HOME -->
 
             <!-- GALLERY -->
-            <section>
-               <div id="gallery">
-                  <h1>Gallery</h1>
-                      <div>
+			<h2 style="text-align:center">Lightbox</h2>
+			
+			<div class="row">
+				<div class="column">
+					<img src="./image/thumb/thumb_1.jpg" style"width:100%"
+				onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="./image/thumb/thumb_2.jpg" style="width: 100%;"
+				onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="./image/thumb/thumb_3.jpg" style="width: 100%;"
+				onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="./image/thumb/thumb_4.jpg" style="width: 100%;"
+				onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="./image/thumb/thumb_5.jpg" style="width: 100%;"
+				onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="./image/thumb/thumb_6.jpg" style="width: 100%;"
+				onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="./image/thumb/thumb_7.jpg" style="width: 100%;"
+				onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="./image/thumb/thumb_8.jpg" style="width: 100%;"
+				onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+				</div>
+				<div class="column">
+					<img src="./image/thumb/thumb_9.jpg" style="width: 100%;"
+				onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+				</div>
+			</div>
 
-                         <!-- PHOTO-CONTAINER 1 -->
-                         <div>
-                         	<div>
-                         	    <img src="./image/thumb/thumb_1.jpg" alt="Robert Johnson">
-                         	    <div>
-                         			<h3>Click to Enlarge</h3>
-                         			<p>Hailed as the king of the Delta blues Robert Johnson is said to have sold his soul to the Devil for his talent!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 1 -->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
 
-                         <!-- PHOTO-CONTAINER 2 -->
-                         <div>
-                         	<div>
-                         	   <img src="./image/thumb/thumb_2.jpg" alt="Blind Wille McTell">
-                         		<div>
-                         			<h1>Click to Enlarge</h1>
-                         			<p>There's not too much known about Blind Wille Mctell, His legacy is surrounded in mystery and folklore!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 2 -->
+					<div class="mySlides">
+						<div class="numbertext">1 / 9</div>
+						<img src="./image/thumb/thumb_1.jpg" style="width: 100%;">
+					</div>
 
-                         <!-- PHOTO-CONTAINER 3 -->
-                         <div>
-                         	<div>
-                         	   <img src="./image/thumb/thumb_3.jpg" alt="Delta Blues Art">
-                         		<div>
-                         			<h1>Click to Enlarge</h1>
-                         			<p>Many people are inspired by the sounds of the blues to make art and other things that enrich the whole experience!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 3 -->
+					<div class="mySlides">
+						<div class="numbertext">2 / 9</div>
+						<img src="./image/thumb/thumb_2.jpg" style="width: 100%;">
+					</div>
 
-                         <!-- PHOTO-CONTAINER 4 -->
-                         <div>
-                         	<div>
-                         	   <img src="./image/thumb/thumb_4.jpg" alt="Mississippi Fred McDowell">
-                         		<div>
-                         			<h1>Click to Enlarge</h1>
-                         			<p>Fred McDowell is one of the very best from the Delta, his voice and playing style are very unique and represent the country lifestyle he once lived as a farmer and husband!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 4 -->
+					<div class="mySlides">
+						<div class="numbertext">3 / 9</div>
+						<img src="./image/thumb/thumb_3.jpg" style="width: 100%;">
+					</div>
 
-                         <!-- PHOTO-CONTAINER 5 -->
-                         <div>
-                         	<div>
-                         	   <img src="./image/thumb/thumb_5.jpg" alt="Dobro Guitar">
-                         		<div>
-                         			<h1>Click to Enlarge</h1>
-                         			<p>One of the many types of guitars used to play the blues is a DOBRO guitar. It is made from wood and steel, and puts out a very twangy feel!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 5 -->
+					<div class="mySlides">
+						<div class="numbertext">4 / 9</div>
+						<img src="./image/thumb/thumb_4.jpg" style="width: 100%;">
+					</div>
 
-                         <!-- PHOTO-CONTAINER 6 -->
-                         <div>
-                         	<div>
-                         	   <img src="./image/thumb/thumb_6.jpg" alt="Etta James">
-                         		<div>
-                         			<h1>Click to Enlarge</h1>
-                         			<p>The blues are not just for men, there are many incredible female singers and players such as Etta James!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 6 -->
+					<div class="mySlides">
+						<div class="numbertext">5 / 9</div>
+						<img src="./image/thumb/thumb_5.jpg" style="width: 100%;">
+					</div>
 
-                         <!-- PHOTO-CONTAINER 7 -->
-                         <div>
-                         	<div>
-                         	   <img src="./image/thumb/thumb_7.jpg" alt="Bonnie Raitt">
-                         		<div>
-                         			<h1>Click to Enlarge</h1>
-                         			<p>Bonnie Raitt is one another example of a Woman who can play the blues, She even sought out lessons at a young age from a student of Mississippi Fred Mcdowell, R.L. Burnside. Bonnie Raitt is an amazing player who deserves more praise than she gets!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 7 -->
+					<div class="mySlides">
+						<div class="numbertext">6 / 9</div>
+						<img src="./image/thumb/thumb_6.jpg" style="width: 100%;">
+					</div>
 
-                         <!-- PHOTO-CONTAINER 8 -->
-                         <div>
-                         	<div>
-                         	   <img src="./image/thumb/thumb_8.jpg" alt="Delta Blues Map">
-                         		<div>
-                         			<h1>Click to Enlarge</h1>
-                         			<p>There are many versions of A Delta Blues Map, All of them will allow you to travel along the same path that previous blues musicians have walked. You will see the homes, bars and clubs that they once played at!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 8 -->
+					<div class="mySlides">
+						<div class="numbertext">7 / 9</div>
+						<img src="./image/thumb/thumb_7.jpg" style="width: 100%;">
+					</div>
 
-                         <!-- PHOTO-CONTAINER 9 -->
-                         <div>
-                         	<div>
-                         	   <img src="./image/thumb/thumb_9.jpg" alt="Sold My Soul">
-                         		<div>
-                         			<h1>Click to Enlarge</h1>
-                         			<p>Its said you can sell your soul to the Devil in exchange for talent at the Crossroads, do you dare to test this theory!</p>
-                         		</div>
-                            </div>
-                         </div>
-                         <!-- END PHOTO_CONTAINER 9 -->
+					<div class="mySlides">
+						<div class="numbertext">8 / 9</div>
+						<img src="./image/thumb/thumb_8.jpg" style="width: 100%;">
+					</div>
 
-                       </div>
-                     </div>
-                    </section>
-                    <!-- END GALLERY -->
+					<div class="mySlides">
+						<div class="numbertext">9 / 9</div>
+						<img src="./image/thumb/thumb_9.jpg" style="width: 100%;">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plisSlides(1)">&#10095;</a>
+
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_1.jpg"
+					style="width: 100%;" onclick="currentSlide(1)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_2.jpg"
+					style="width: 100%;" onclick="currentSlide(2)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_3.jpg"
+					style="width: 100%;" onclick="currentSlide(3)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_4.jpg"
+					style="width: 100%;" onclick="currentSlide(4)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_5.jpg"
+					style="width: 100%;" onclick="currentSlide(5)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_6.jpg"
+					style="width: 100%;" onclick="currentSlide(6)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_7.jpg"
+					style="width: 100%;" onclick="currentSlide(7)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_8.jpg"
+					style="width: 100%;" onclick="currentSlide(8)" alt="">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="./image/thumb/thumb_9.jpg"
+					style="width: 100%;" onclick="currentSlide(9)" alt="">
+					</div>
+				</div>
+			</div>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/GsB_cGdgPTo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
