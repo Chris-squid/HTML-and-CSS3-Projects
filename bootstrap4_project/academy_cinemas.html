@@ -131,7 +131,7 @@
               </div>
               
             </div>
-          </div>
+          </div><br>
 
           
 
@@ -139,18 +139,75 @@
 
 
           <!-- /showtimes -->
-
+          <!---signup form-->
+          <div class="jumbotron jumbotron-fluid bg-info text-center >
+            <div class="container">
+              <p class="lead text-light">MOVIE DEALS & REWARDS!!!</p>
+            
+              
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals.</button>
+          </div>
+        </div>
+        
+          
           <div class="text-center">
             <form>
-                <h1 id="deals" class="text-primary my-5">Sign up for Movie Club<br>Rewards</h1>
-                <div class="form-group">
+              
+                <div class="form-group"><br>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-                <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve great movie rewards">
                   Sign up!
                 </button>
             </form> 
           </div>
+        
+    
+      
+          <!-- /signup form -->
+
+          <!-- form modal -->
+          <div class="modal" id="register" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to recieve movie deals..</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                  <form>
+                    <div class="form-group">
+                      <label for="firstname">First Name</label>
+                      <input type="text" class="form-control" id="fisrtname" placeholder="First Name...">
+                    </div>
+                    <div class="form-group">
+                      <label for="lastname">Last Name</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                    </div>
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Email...">
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" id="password" placeholder="Password...">
+                      </div>
+                    </form>
+                  
+
+
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--/form modal -->
 
           <div class="container my-5">
               <ul class="nav nav-inline">
@@ -185,9 +242,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script>
-      var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-        trigger: 'focus'
-        })
+      $('.popover-dismiss').popover({
+          trigger: 'focus'
+      })
     </script>
 
    
